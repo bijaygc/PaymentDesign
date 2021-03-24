@@ -18,16 +18,16 @@
         <ImageView
             android:id="@+id/back"
             android:layout_width="40dp"
-            android:gravity="center"
             android:layout_height="match_parent"
+            android:gravity="center"
             android:src="@drawable/ic_back" />
 
         <ImageView
             android:id="@+id/profile"
             android:layout_width="40dp"
-            android:gravity="center"
-            android:layout_height="match_parent"
+            android:layout_height="35dp"
             android:layout_alignParentEnd="true"
+            android:gravity="center"
             android:src="@drawable/ic_profile" />
     </RelativeLayout>
 
@@ -51,19 +51,19 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <LinearLayout
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_margin="8dp"
-                android:background="@drawable/etcornor"
-                android:orientation="horizontal"
-                android:padding="5dp">
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="10dp">
 
-                <com.google.android.material.card.MaterialCardView
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    app:cardCornerRadius="6dp">
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/etcornor"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
 
 
                     <TextView
@@ -74,26 +74,19 @@
                         android:hint="Thu,09 April "
                         android:textColor="@color/black"
                         android:textSize="15sp" />
-                </com.google.android.material.card.MaterialCardView>
 
-                <com.google.android.material.card.MaterialCardView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    app:cardCornerRadius="6dp">
 
                     <TextView
                         android:id="@+id/tVTime"
                         android:layout_width="wrap_content"
+
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:hint="8:00"
                         android:textColor="@color/green"
                         android:textSize="15sp" />
-                </com.google.android.material.card.MaterialCardView>
-
-
-            </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
 
 
             <LinearLayout
@@ -109,11 +102,11 @@
                     android:src="@drawable/ic_location" />
 
                 <TextView
-                    android:id="@+id/locationArea"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/tVLocationArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    android:text="Buddhanagar-10 , ktm" />
+                    android:hint="Buddhanagar-10 , ktm" />
             </LinearLayout>
 
             <com.google.android.material.card.MaterialCardView
@@ -126,14 +119,13 @@
 
                 <EditText
                     android:id="@+id/etMessage"
-
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@color/white"
                     android:hint="Message"
-                    android:textColor="@color/back"
                     android:paddingStart="5dp"
-                    tools:ignore="RtlSymmetry" />
+                    android:textColor="@color/back"
+                   />
 
             </com.google.android.material.card.MaterialCardView>
 
@@ -149,8 +141,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
                     android:background="@color/white"
-                    android:textColor="@color/back"
-                    android:hint="Reason of the Visit" />
+                    android:hint="Reason of the Visit"
+                    android:textColor="@color/back" />
             </com.google.android.material.card.MaterialCardView>
 
             <TextView
@@ -161,8 +153,8 @@
                 android:layout_marginHorizontal="20sp"
                 android:text="Check + Scalling"
                 android:textColor="@color/blue"
-                android:textStyle="bold"
-                android:textSize="22sp" />
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/price"
@@ -171,7 +163,6 @@
                 android:layout_below="@id/reason"
                 android:layout_marginHorizontal="20dp"
                 android:text="124$"
-                android:textStyle="italic"
                 android:textColor="@color/blue"
                 android:textSize="22sp" />
 
@@ -201,9 +192,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Manage cards"
-                    android:layout_marginHorizontal="10dp"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
